@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+}
+
+#ville {
+  text-transform: capitalize;
+}
+
+#temperature {
+  font-size: 4em;
+}
+
+#changer {
+  background: rgba(178, 223, 251, 0.3);
+  cursor: pointer;
+}
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); /* Ajout d'un effet de flou */
+  text-align: center;
+}
+.conteneur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.conteneur:hover {
+  transform: scale(1.02);
+}
+input,
+button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background: #ff9800;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e68900;
+}
+.icon {
+  width: 100px;
+  vertical-align: middle;
+}
+img {
+  display: flex;
+  margin: auto;
+}
+.conteneur img {
+  margin-bottom: 40px;
+}
+h5 {
+  margin: 0%;
+  font-size: medium;
+}
+#feels-like {
+  margin: 15px;
+}
+#hourly-container,
+#weekly-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.forecast-box {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    #4facfe,
+    #00f2fe
+  ); /* Dégradé bleu moderne */
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.forecast-box:hover {
+  transform: scale(1.05);
+}
+.forecast-box img {
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+}
+@media (max-width: 1080px) {
+  .conteneur {
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px;
+  }
+}
+
+/* Écran très petit (téléphone en portrait, petits appareils) */
+@media (max-width: 480px) {
+  .conteneur {
+    flex-direction: column; /* Garder une disposition en colonne */
+    justify-content: center;
+    align-items: flex-start; /* Aligner les éléments à gauche */
+    gap: 10px;
+    padding: 10px;
+  }
+}

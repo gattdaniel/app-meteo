@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".css">
+    <script src=".js" defer></script>
+</head>
+<body>
+  
+        <div class="row justify-content-center">
+          
+          <div class="col-md-8">
+            <!-- Titre -->
+            <h1 class="text-center mt-5">prevision meteo actuelle</h1>
+            
+            <!-- Ville / Temperature -->
+            <div class="text-center">
+              <span id="ville">paris</span>
+              <div id="temperature">
+                <span id="temperature_label" >
+                  xx.x
+                </span> °C
+                <img id="weather-icon" src="" alt="Icône météo">
+                <h5 id="description"></h5>
+              </div>
+            </div>
+          </div>
+          <div class="conteneur">
+              <div class="container">
+              <p><img src="images/temperatures.png" class="icon"><span id="feels-like"> Ressentie : --°C</span></p>
+            </div>
+              <div class="container">
+              <p><img src="images/gauge.png" class="icon"><span id="pressure">Pression : -- hPa</span></p>
+            </div>
+              <div class="container">
+              <p><img src="images/humidity.png" class="icon"> <span id="humidity"> Humidité : --%</span></p>
+            </div>
+              <div class="container">
+              <p><img src="images/wind.png" class="icon"> <span id="wind-speed"> Vent : -- m/s</span></p>
+            </div>
+              <div class="container">
+                <p><img src="images/cardinal-points.png" class="icon"> <span id="wind-direction"> Direction : --°</span></p>
+            </div>
+            <div class="container">
+              <p><img src="images/sunrise.png" class="icon"> Lever du soleil : <span id="sunrise"></span></p>
+              <p>Coucher du soleil : <span id="sunset"></span></p>
+            </div>
+          </div>
+
+          <section id="hourly-forecast">
+            <h2>Prévisions pour les prochaines heures</h2>
+            <div id="hourly-container"></div>
+        </section>
+       <section id="weekly-forecast">
+            <h2>Prévisions des 5 prochains jours</h2>
+            <div id="weekly-container"></div>
+        </section>
+
+          <input type="text" id="city-input" placeholder="Entrez une ville">
+          <button class="changer">Rechercher</button>
+        </div>
+      
+          
+        </div>
+</body>
+</html>
