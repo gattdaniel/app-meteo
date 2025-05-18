@@ -23,7 +23,7 @@ Cette application web permet d'afficher les conditions météo actuelles ainsi q
 
 ## 📸 Capture d'écran
 
-*(./imageprojetmeteo1.png)
+![Aperçu du projet](./imageprojetmeteo1.png)
 
 ---
 
